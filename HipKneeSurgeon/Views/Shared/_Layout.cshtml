@@ -1,0 +1,466 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hip knee surgeon</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="@Url.Content("~/images/favicon-32x32.png")" />
+    <link rel="icon" type="image/png" sizes="32x32" href="@Url.Content("~/images/favicon-16x16.png")" />
+
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <style>
+        i.fa {
+            display: inline-block;
+            padding: 0.5em 0.6em;
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header-top">
+        <!-- header-top-->
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <span class="text-block time-block">
+                        <span class="time-text"></span>
+                    </span>
+                </div>
+                <div class="col-lg-8 col-md-8 col-sm-8  col-xs-12">
+                    <div class="top-text">
+                        <span class="text-block call-block">
+                            <span class="call-no"> <i class="fa fa-phone-square fa-lg"></i>01111 11111</span>
+                        </span>
+                        <span class="text-block call-block">
+                            <span>
+                                <i class="fa fa-google-plus" style="border-radius: 60px; box-shadow: 0px 0px 2px #888;"></i>
+                                <a target="_blank" href="https://www.facebook.com/syam.morapudi" style="color: #fff;">
+                                    <i class="fa fa-facebook" style="border-radius: 60px; box-shadow: 0px 0px 2px #888;"></i>
+                                </a>
+                                <a target="_blank" href="https://twitter.com/syam.morapudi" style="color: #fff;">
+                                    <i class="fa fa-twitter" style="border-radius: 60px; box-shadow: 0px 0px 2px #888;">
+                                    </i>
+                                </a>
+                                <i class="fa fa-linkedin" style="border-radius: 60px; box-shadow: 0px 0px 2px #888;"></i>
+                            </span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header">
+        <div class="container">
+            <div class="row">
+                @*<img src="~/images/logo2.png" alt="" class="img-responsive" style="float: left; width: 96px; height: 116px;">*@
+                <div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="float: left; margin-left: -10px;">
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <span style="font-size: 34px; line-height: 1.3; color: #324250; font-family: serif;">Consultant Orthopdeic Clinic</span>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <span style="font-size: 20px; line-height: 1.8; color: #000; font-family: serif; font-style: italic;">"High quality service assured, makes you feel great again"</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid" style="background-color: #324250;">
+            <div class="row">
+                <div class="col-lg-offset-1 col-lg-8 col-md-offset-1 col-md-11 col-sm-12 col-xs-12">
+                    <div class="navigation">
+                        <div id="navigation">
+                            <ul>
+                                <li class="active"><a href="@Url.Action("Index", "Home")" title="Home">Home</a></li>
+                                <li class="has-sub">
+                                    <a href="#" title="Service List">About Us</a>
+                                    <ul>
+                                        <li class="has-sub">
+                                            <a href="#" title="Service List">Physiotherapist</a>
+                                            <ul>
+                                                <li><a href="@Url.Action("Syam", "Home")" title="Features">Syam Morapudi</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="@Url.Action("Testimonial", "Home")" title="Features">Testimonial</a></li>
+                                    </ul>
+                                </li>
+                                <li class="has-sub">
+                                    <a href="#" title="Services">Services</a>
+                                    <ul>
+                                        <li class="has-sub">
+                                            <a href="#" title="Physiotherapy">Physiotherapy</a>
+                                            <ul>
+                                                <li class="has-sub">
+                                                    <a href="#" title="Service List">Spinal</a>
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#" title="Service List">Headaches</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" title="Service List">Neck pain</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" title="Service List">Whiplash Injury</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" title="Service List">Thoracic pain</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" title="Service List">Rib Injury</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" title="Service List">Low Back Pain</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" title="Service List">Sciatica</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" title="Service List">Slipped Discs</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" title="Service List">Pre &amp; post-operative rehab</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="has-sub">
+                                                    <a href="#" title="Service List">Upper Limb </a>
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#" title="Service List">Shoulder</a>
+                                                            <ul>
+                                                                <li>
+                                                                    <a href="#" title="Service List">Frozen Shoulder</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#" title="Service List">Rotator Cuff Muscle Injuries</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#" title="Service List">Shoulder Impingement</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#" title="Service List">Shoulder dislocation</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#" title="Service List">Bursitis</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#" title="Service List">Nerve Injuries (traction)</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#" title="Service List">Muscular weakness</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#" title="Service List">Pre and post-operative rehabilitation</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" title="Service List">Elbow</a>
+                                                            <ul>
+                                                                <li>
+                                                                    <a href="#" title="Service List">Tendinopathy</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#" title="Service List">Tennis Elbow</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#" title="Service List">Golfer’s Elbow</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#" title="Service List">Joint pain</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#" title="Service List">Osteoarthritis</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" title="Service List">Wrist and Hand</a>
+                                                            <ul>
+                                                                <li>
+                                                                    <a href="#" title="Service List">Ligament sprains</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#" title="Service List">Repetitive strain injuries</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#" title="Service List">Carpal tunnel syndrome</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#" title="Service List">Muscle strains	</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="has-sub">
+                                                    <a href="#">Lower Limb</a>
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#">Hip/Groin</a>
+                                                            <ul>
+                                                                <li>
+                                                                    <a href="#">Joint pain</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">Osteoarthritis</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">Tendinopathy</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">Bursitis</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">Muscle or ligament sprains</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">Pre and Post-Operative rehabilitation</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Knee</a>
+                                                            <ul>
+                                                                <li>
+                                                                    <a href="#">Runner’s knee</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">Iliotibial band syndrome</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">Sprained ligaments</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">Quads/Hams Injuries</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">Fractures</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">Dislocations</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">Patello-femoral pain</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">Osteoarthritis</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">Torn-Meniscus/cartilage</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">Bursitis</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">Sports injuries</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">Pre &amp; Post-op rehab</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                <li class="has-sub">
+                                                    <a href="#">Ankle and Foot</a>
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#">Plantar Fasciitis</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Ligament sprain</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Subluxation or dislocation</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Heel pain</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Pre and post-operative rehabilitation</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">Work related injuries and pain</a>
+                                        </li>
+                                        <li class="has-sub">
+                                            <a href="#">SPORTS Physiotherapy</a>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Sports Massage</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Movement Screening</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Running Screening</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Golf Screening</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Tennis Screening</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Cricket Screening</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Sports Injury Screening</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Sports Rehabilitation</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Core Stability</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Taping and Bracing</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="has-sub">
+                                            <a href="#">Treatment Used</a>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Manual therapy</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Periph &amp; Spinal Mobilisation</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Spinal Manipulation</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Soft Tissue Release</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Myofascial release</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Mulligans NAGS, SNAGS and MWMs</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Postural Exercises</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Electrotherapy</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Acupuncture</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Dry Needling</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Personalised Rehabilitation</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Stretch/Strength programme</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Movement Rehabilitation</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Home Exercises</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="@Url.Action("Testimonial", "Home")" title="Testimonials">Testimonial</a> </li>
+                                <li><a href="@Url.Action("FAQ", "Home")" title="FAQ">FAQ</a> </li>
+                                <li><a href="@Url.Action("Contact", "Home")" title="Contact Us">Contact</a> </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="body-color-style">
+        @RenderBody()
+        <div class="footer" style="color: #fff;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                        <div class="footer-widget widget-newsletter">
+                            <h2 class="widget-title">Newsletters</h2>
+                            <p>Enter your email address to receive new patient information and other useful information right to your inbox.</p>
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Email Address">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-default" type="button">Subscribe</button>
+                                </span>
+                            </div>
+                            <!-- /input-group -->
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-2 col-xs-12">
+                        <div class="footer-widget">
+                            <h2 class="widget-title">Therapies</h2>
+                            <ul class="yspclistnone">
+                                <li><a href="#">Massage Therapy  </a></li>
+                                <li><a href="#">Physiotherapy</a></li>
+                                <li><a href="#">Geriatric</a></li>
+                                <li><a href="#">Rehabilition</a></li>
+                                <li><a href="#">Diagnostics</a></li>
+                                <li><a href="#">Acunpuncture</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+                        <div class="footer-widget footer-social">
+                            <h2 class="widget-title">Social Feed</h2>
+                            <ul class="yspclistnone">
+                                <li><a target="_blank" href="https://www.facebook.com/syam.morapudi"> <i class="fa fa-facebook"></i> Facebook  </a></li>
+                                <li><a target="_blank" href="https://twitter.com/syam.morapudi"><i class="fa fa-twitter"></i> Twitter</a></li>
+                                <li><a href="#"><i class="fa fa-google-plus"></i> Google Plus</a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i> Linked In</a></li>
+                                <li><a href="#"> <i class="fa fa-youtube"></i>Youtube</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-2 col-sm-2 col-xs-12">
+                        <div class="footer-widget footer-social">
+                            <h2 class="widget-title">Clinic Address</h2>
+                            <ul class="yspclistnone contact">
+                                <li>
+                                    <i class="fa fa-map-marker"></i> East Cheshire NHS Trust, Cheshire, SK10 3BL
+                                </li>
+                                <li><i class="fa fa-phone"></i> 0111 11111</li>
+                                <li><i class="fa fa-envelope-o"></i> info@test.co.uk</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="tiny-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="copyright-content">
+                            <i class="fa fa-love"></i>&copy; Consultant Orthopaedic Surgeon
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    <script src="~/Scripts/menumaker.js"></script>
+    <script src="~/Scripts/jquery.sticky.js"></script>
+    @*<script src="~/Scripts/sticky-header.js"></script>*@
+    @RenderSection("scripts", required: false)
+</body>
+</html>
