@@ -1179,7 +1179,7 @@ label {
         font-weight: 500;
         background: #294a70;
         text-transform: uppercase;
-        border-bottom: 2px solid #069c57;
+        border-bottom: 2px solid #fff;
     }
 
     #navigation ul ul li:last-child > a, #navigation ul ul li.last-item > a {
@@ -1188,7 +1188,7 @@ label {
 
     #navigation ul ul li:hover > a, #navigation ul ul li a:hover {
         color: #ffffff;
-        background-color: #294a70;
+        background-color: #f4a024;
     }
 
     #navigation ul ul li.has-sub > a:after {
