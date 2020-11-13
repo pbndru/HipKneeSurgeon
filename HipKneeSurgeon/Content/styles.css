@@ -924,7 +924,7 @@ label {
 }
 
 .header-top {
-    background-color: #324250;
+    background-color: #49688e;
     font-size: 15px;
     padding-top: 11px;
     padding-bottom: 11px;
@@ -1095,7 +1095,7 @@ label {
 
     #navigation > ul > li:hover > a {
         color: #ffffff;
-        background-color: #0eb769;
+        background-color: #f4a024;
     }
 
     #navigation > ul > li.has-sub > a {
@@ -1177,7 +1177,7 @@ label {
         text-decoration: none;
         color: #fff;
         font-weight: 500;
-        background: #0eb769;
+        background: #294a70;
         text-transform: uppercase;
         border-bottom: 2px solid #069c57;
     }
@@ -1188,7 +1188,7 @@ label {
 
     #navigation ul ul li:hover > a, #navigation ul ul li a:hover {
         color: #ffffff;
-        background-color: #0eb769;
+        background-color: #294a70;
     }
 
     #navigation ul ul li.has-sub > a:after {
@@ -1476,7 +1476,8 @@ label {
 8. Footer 
 -------------------------------------*/
 .footer {
-    background-color: #324250;
+    background-color: #294a70;
+    border-top: 5px solid #f4a024;
     padding-top: 20px;
     padding-bottom: 20px;
 }
@@ -1508,7 +1509,7 @@ label {
         }
 
             .footer-widget li a:hover {
-                color: #0eb769;
+                color: #f4a024;
             }
 
 .footer-link {
@@ -2576,12 +2577,12 @@ p.testimonial_para {
     margin-bottom: 20px;
 }
 
-.panel-group .panel {
-    margin-bottom: 20px;
-    border-radius: 4px;
-}
+    .panel-group .panel {
+        margin-bottom: 20px;
+        border-radius: 4px;
+    }
 
-.panel-default>.panel-heading {
+.panel-default > .panel-heading {
     color: #333;
     background-color: #f5f5f5;
     border-color: #ddd;
@@ -2614,11 +2615,11 @@ p.testimonial_para {
     display: none;
 }
 
-.panel-default>.panel-heading+.panel-collapse>.panel-body {
+.panel-default > .panel-heading + .panel-collapse > .panel-body {
     border-top-color: #ddd;
 }
 
-.panel-group .panel-heading+.panel-collapse>.list-group, .panel-group .panel-heading+.panel-collapse>.panel-body {
+.panel-group .panel-heading + .panel-collapse > .list-group, .panel-group .panel-heading + .panel-collapse > .panel-body {
     border-top: 1px solid #ddd;
 }
 
@@ -2637,7 +2638,7 @@ p {
 }
 
 .wrapper {
-     width: 70%; 
+    width: 70%;
 }
 
 .main-content {
@@ -2653,8 +2654,8 @@ p {
     -moz-transform: rotate(180deg);
     transform: rotate(180deg);
 }
-constructed stylesheet
-.panel-heading a:before {
+
+constructed stylesheet .panel-heading a:before {
     font-family: 'Glyphicons Halflings';
     content: "";
     float: right;
@@ -2669,13 +2670,13 @@ a, a:link, a:visited, a:active, a:hover, button, input, select, textarea, i {
     transition: all 300ms ease-in-out;
 }
 
-.panel-heading.active a:before { 
-    -webkit-transform: rotate(180deg); 
+.panel-heading.active a:before {
+    -webkit-transform: rotate(180deg);
     -moz-transform: rotate(180deg);
     transform: rotate(180deg);
 }
-constructed stylesheet
-.panel-heading a:before {
+
+constructed stylesheet .panel-heading a:before {
     font-family: 'Glyphicons Halflings';
     content: "";
     float: right;
