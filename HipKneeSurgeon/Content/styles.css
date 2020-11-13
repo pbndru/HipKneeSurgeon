@@ -926,8 +926,8 @@ label {
 .header-top {
     background-color: #49688e;
     font-size: 15px;
-    padding-top: 11px;
-    padding-bottom: 11px;
+    padding-top: 3px;
+    padding-bottom: 2px;
     line-height: 15px;
     color: #fff;
     font-weight: 500;
@@ -1059,11 +1059,13 @@ label {
     }
 
 #navigation {
-    margin-top: 10px;
+    /*margin-top: 10px;*/
 }
 
     #navigation > ul > li {
         float: left;
+        border-left: 1px solid #fff;
+        border-right: 1px solid #fff;
     }
 
     #navigation.align-center > ul {
@@ -1248,7 +1250,7 @@ label {
 
         #navigation.small-screen ul li {
             width: 100%;
-            border-top: 1px solid #474747;
+            border-top: 1px solid #fff;
         }
 
         #navigation.small-screen ul ul li, #navigation.small-screen li:hover > ul > li {
@@ -1279,7 +1281,7 @@ label {
         }
 
         #navigation.small-screen ul ul li:hover > a, #navigation.small-screen ul ul li.active > a {
-            color: #474747;
+            color: #fff;
         }
 
         #navigation.small-screen ul ul, #navigation.small-screen ul ul ul, #navigation.small-screen.align-right ul ul {
@@ -1333,7 +1335,7 @@ label {
                 border: 0;
                 height: 2px;
                 width: 15px;
-                background: #474747;
+                background: #fff;
                 -webkit-transform: rotate(45deg);
                 -moz-transform: rotate(45deg);
                 -ms-transform: rotate(45deg);
@@ -1343,7 +1345,7 @@ label {
 
             #navigation.small-screen #menu-button.menu-opened:before {
                 top: 23px;
-                background: #474747;
+                background: #fff;
                 width: 15px;
                 -webkit-transform: rotate(-45deg);
                 -moz-transform: rotate(-45deg);
@@ -1358,7 +1360,7 @@ label {
             right: 0;
             top: 0;
             display: block;
-            border-left: 1px solid #474747;
+            border-left: 1px solid #fff;
             height: 53px;
             width: 53px;
             cursor: pointer;
@@ -1368,8 +1370,8 @@ label {
             }
 
         #navigation.small-screen ul ul .submenu-button {
-            height: 34px;
-            width: 34px;
+            /*height: 34px;
+            width: 34px;*/
         }
 
         #navigation.small-screen .submenu-button:after {
@@ -1389,7 +1391,7 @@ label {
         }
 
         #navigation.small-screen .submenu-button.submenu-opened:after {
-            background: #474747;
+            background: #fff;
         }
 
         #navigation.small-screen .submenu-button:before {
@@ -2494,6 +2496,12 @@ ul.widget-recent-post {
     }
 }
 
+@media screen and (max-width: 768px) {
+    .navigation {
+        float: none;
+    }
+}
+
 @media screen and (max-width:320px) {
     .navigation {
         float: none;
@@ -2632,9 +2640,10 @@ p.testimonial_para {
 }
 
 p {
-    font-size: 18px;
-    color: #000;
-    padding: 0px 10px 0px 10px;
+    font-size: 16px;
+    color: #666666;
+    line-height: 1.5;
+    margin: 0 0 15px;
 }
 
 .wrapper {
